@@ -1,16 +1,71 @@
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/style.css -->
+
+<!-- npx tailwindcss -i ./src/input.css -o ./dist/style.css --watch -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="bg-black">
-    <h1 class="text-white m-16 ">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-      totam, autem suscipit rem obcaecati sit similique cum eum aliquam aut
-      rerum. Necessitatibus ex voluptates vel?
-    </h1>
+
+  <body class="bg-slate-900">
+    <!-- center something horizontally and vertically using grid  -->
+
+    <h1 class="text-white text-4xl m-6 grid place-content-center">what,s up</h1>
+
+    <!--  create a card using flex  -->
+
+    <div
+      class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4"
+    >
+      <div>
+        <img
+          class="h-12 w-12"
+          src="../src/images/chat.png"
+          alt="ChitChat Logo"
+        />
+      </div>
+      <div>
+        <div class="text-xl font-medium text-black">ChitChat</div>
+        <p class="text-slate-500">You have a new message!</p>
+      </div>
+    </div>
+    <br /><br />
+
+    <!-- card using tailwind -->
+
+    <div
+      class="py-8 px-8 max-w-sm mx-auto bg-blue-950 rounded-2xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6"
+    >
+      <img
+        class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0"
+        src="../src/images/profile-pic.png"
+        alt="Woman's Face"
+      />
+      <div class="text-center space-y-2 sm:text-left">
+        <div class="space-y-0.5">
+          <p class="text-lg text-black font-semibold">Erin Lindford</p>
+          <p class="text-slate-500 font-medium">Product Engineer</p>
+        </div>
+        <button
+          class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
+        >
+          Message
+        </button>
+      </div>
+    </div>
+    <br />
+
+    <!-- Handling Hover, Focus, and Other States -->
+    <div class="grid place-content-center">
+      <button
+        class="grid place-content-start bg-sky-500 hover:bg-sky-700 rounded-xl text-gray-200 p-3 "
+      >
+        Save changes
+      </button>
+    </div>
   </body>
 </html>
