@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body >
+  <body>
     <!-- center something horizontally and vertically using grid  -->
 
     <h1 class="text-white text-4xl m-6 grid place-content-center">what,s up</h1>
@@ -68,39 +68,118 @@
         Save changes
       </button>
     </div>
-                     
-
+    <br /><br />
 
     <!--/////////////     flex     /////////////////////   -->
 
-    <div class="flex flex-row h-50 w-25">
-      <div class="basis-1/4 bg-cyan-700 m-6 " >01</div>
-      <div class="basis-1/4 bg-cyan-700 m-6 ">02</div>
-      <div class="basis-1/2 bg-cyan-700 m-6 ">03</div>
+    <div class="grid place-content-center">
+      <h1
+        class="text-3xl text-center text-cyan-600 bg-slate-100 w-32 font-bold"
+      >
+        flex part
+      </h1>
+      <br /><br />
     </div>
 
+    <div class="flex flex-row">
+      <div class="basis-1/4 bg-slate-500 text-cyan-50">01</div>
+      <div class="basis-1/4 bg-black text-cyan-50">02</div>
+      <div class="basis-1/2 bg-slate-600 text-cyan-50">03</div>
+    </div>
+    <br /><br />
+
+    <!-- Flex Direction -->
+
+    <div class="grid place-content-center">
+      <h1
+        class="text-3xl text-center text-cyan-600 bg-slate-100 w-32 font-bold"
+      >
+        Flex Direction
+      </h1>
+      <br /><br />
+    </div>
+
+    <div class="flex flex-col">
+      <div>01</div>
+      <div>02</div>
+      <div>03</div>
+    </div>
+    <br /><br />
+
+    <div class="flex flex-col-reverse">
+      <div>01</div>
+      <div>02</div>
+      <div>03</div>
+    </div>
+
+    <!-- Flex Wrap -->
+
+    <div class="grid place-content-center">
+      <h1
+        class="text-3xl text-center text-cyan-600 bg-slate-100 w-32 font-bold"
+      >
+        Flex Wrap
+      </h1>
+      <br /><br />
+    </div>
+
+    <div class="flex flex-wrap">
+      <div class="basis-1/2">01</div>
+      <br />
+      <div class="basis-1/2">02</div>
+      <br />
+      <div class="basis-1/2">03</div>
+      <br />
+    </div><br>
+
+    <!-- grid part -->
+
+    <div class="grid place-content-center">
+      <h1
+        class="text-3xl text-center text-cyan-600 bg-slate-100 w-32 font-bold"
+      >
+      Grid part 
+      </h1>
+      <br /><br />
+    </div>
+
+    <div class="grid grid-cols-3 gap-4">
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-1</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-2</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-3</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-4</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-5</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-6</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-7</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-8</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-9</div>
+    </div><br><br>
+
+    <div class="grid grid-cols-4 gap-6 ">
+      <div class=" col-start-2 col-span-2  bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-1</div>
+      <div class=" col-start-2 col-span-3  bg-sky-500  hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-2</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-3</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-4</div>
+      <div class=" col-start-3 col-span-2 bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-5</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-6</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-7</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-8</div>
+      <div class=" col-start-4 col-span-2  bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-9</div>
+    </div><br><br><br>
 
 
+    <div class="grid grid-rows-4 grid-flow-col gap-6">
+      <div class=" row-start-2 row-span-2  bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-1</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-2</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-3</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-4</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-5</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-6</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-7</div>
+      <div class=" row-start-3 row-span-2   bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-8</div>
+      <div class="bg-sky-500 hover:bg-sky-700 rounded-xl text-white font-bold p-3">box-9</div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="h-80"></div>
   </body>
 </html>
